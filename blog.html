@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shadowacademy Blog - Artículos sobre Ciberseguridad, Desarrollo Web y Mobile.">
+
+    <title>Blog | Shadowacademy</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Shadow<span>academy</span></a>
+
+            <nav>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html#services" class="nav-link">Servicios</a></li>
+                    <li><a href="index.html#courses" class="nav-link">Docencia</a></li>
+                    <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                    <li><a href="index.html#contact" class="btn btn-primary">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <section class="blog-intro">
+            <h1 class="section-title">Nuestro <span class="text-gradient-cyan">Blog</span></h1>
+            <p class="section-subtitle">Explora lo último en tecnología y seguridad informática</p>
+        </section>
+
+        <!-- Filters -->
+        <div class="blog-filters">
+            <button class="filter-btn active" data-category="all">Todos</button>
+            <button class="filter-btn" data-category="security">Ciberseguridad</button>
+            <button class="filter-btn" data-category="dev">Desarrollo</button>
+            <button class="filter-btn" data-category="mobile">Mobile</button>
+        </div>
+
+        <!-- Blog Grid -->
+        <div id="blog-posts-container" class="blog-grid">
+            <!-- Posts injected via JS -->
+        </div>
+
+        <!-- Load More -->
+        <div class="load-more-container">
+            <button id="load-more-btn" class="btn btn-outline">Cargar más</button>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">Shadow<span>academy</span></a>
+                    <p style="margin-top: 1rem;">
+                        Transformando el futuro digital con código seguro y arquitecturas escalables.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Github">GH</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">IN</a>
+                        <a href="#" class="social-link" aria-label="Twitter">X</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Servicios</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Desarrollo Web</a></li>
+                        <li><a href="#">Aplicaciones Móviles</a></li>
+                        <li><a href="#">Consultoría de Seguridad</a></li>
+                        <li><a href="#">Auditoría de Código</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Academia</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Cursos Online</a></li>
+                        <li><a href="#">Mentoria Personalizada</a></li>
+                        <li><a href="#">Recursos Gratuitos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Contacto</h4>
+                    <ul class="contact-info footer-links">
+                        <li>📧 contacto@shadowacademy.dev</li>
+                        <li>📍 Ciudad de México, MX</li>
+                        <li>📱 +52 55 1234 5678</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Shadowacademy. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

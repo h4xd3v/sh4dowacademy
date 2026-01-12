@@ -1,0 +1,89 @@
+/* Services Component */
+.service-card {
+    background: rgba(19, 19, 31, 0.6);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    transition: var(--transition-base);
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--color-accent-purple);
+    box-shadow: var(--shadow-neon-purple);
+    background: rgba(28, 28, 46, 0.8);
+}
+
+.service-icon {
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--spacing-lg);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--color-accent-cyan);
+    transition: var(--transition-base);
+}
+
+.service-card:hover .service-icon {
+    background: var(--color-accent-cyan);
+    color: var(--color-bg-primary);
+}
+
+.service-title {
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-primary);
+}
+
+.service-desc {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-lg);
+    flex-grow: 1;
+}
+
+.service-link {
+    font-weight: 600;
+    color: var(--color-accent-purple);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    transition: var(--transition-fast);
+}
+
+.service-link:hover {
+    gap: var(--spacing-sm);
+    color: var(--color-accent-cyan);
+}
+
+/* Specific Card Accents */
+.service-card:nth-child(1):hover {
+    border-color: var(--color-accent-cyan);
+    box-shadow: var(--shadow-neon-cyan);
+}
+
+.service-card:nth-child(2):hover {
+    border-color: var(--color-accent-purple);
+    box-shadow: var(--shadow-neon-purple);
+}
+
+.service-card:nth-child(3):hover {
+    border-color: var(--color-accent-green);
+    box-shadow: 0 0 10px rgba(10, 255, 104, 0.3);
+}
+
+.service-card:nth-child(4):hover {
+    border-color: var(--color-accent-red);
+    box-shadow: 0 0 10px rgba(255, 42, 109, 0.3);
+}

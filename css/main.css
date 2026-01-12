@@ -1,0 +1,47 @@
+@import 'variables.css';
+@import 'reset.css';
+@import 'typography.css';
+@import 'layout.css';
+
+/* Components will be imported here */
+@import 'components/header.css';
+@import 'components/hero.css';
+@import 'components/services.css';
+@import 'components/courses.css';
+@import 'components/blog.css';
+@import 'components/footer.css';
+
+/* Global Utilities */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-sm) var(--spacing-xl);
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    transition: var(--transition-base);
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.btn-primary {
+    background: var(--color-accent-cyan);
+    color: var(--color-bg-primary);
+}
+
+.btn-primary:hover {
+    box-shadow: var(--shadow-neon-cyan);
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    border-color: var(--color-accent-purple);
+    color: var(--color-text-primary);
+    background: transparent;
+}
+
+.btn-outline:hover {
+    background: rgba(188, 19, 254, 0.1);
+    box-shadow: var(--shadow-neon-purple);
+    transform: translateY(-2px);
+}
